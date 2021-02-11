@@ -1,0 +1,175 @@
+<html><head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Yashashree Food Product - Sarang Phalak</title>
+
+<style>
+.mySlides {display:none;}
+
+.checked {
+  color: orange;
+}
+<!-- css -->
+.links
+{
+border-radius:10px;
+}
+.links:hover
+{
+background-color:purple;
+}
+
+.zoom
+{
+transition:transform 0.7s;
+}
+.zoom:hover
+{
+transform:scale(1.04);
+}
+
+</style>
+</head>
+
+<body>
+<table border="0" width="100%" height="10%">
+<tr>
+<td width="12.5%" align="center" bgcolor="orange" class="links"><font color="white"><a style="color: inherit;" href="html.html">HOME</a></td>
+<td width="12.5%" align="center" bgcolor="orange" class="links"><font color="white"><a style="color: inherit;" href="About us.html">ABOUT US</a></td>
+<td width="12.5%" align="center" bgcolor="orange" class="links"><font color="white"><a style="color: inherit;" href="contact.html">CONTACT US</a></td>
+<td width="12.5%" align="center" bgcolor="orange" class="links"><font color="white"><a style="color: inherit;" href="menu.html">MENU</a></td>
+<td width="12.5%" align="center" bgcolor="orange" class="links"><font color="white"><a style="color: inherit;" href="Faq.html">FAQ</a></td>
+<td width="12.5%" align="center" bgcolor="orange" class="links"><font color="white"><a style="color: inherit;" href="signup form.html">SINGUP</a></td>
+<td width="12.5%" align="center" bgcolor="orange" class="links"><font color="white"><a style="color: inherit;" href="Login form.html">LOGIN</a></td>
+</tr>
+</Table>
+
+<div class="w3-content w3-section" style="max-width:100%" "max-height:30%">
+  <img class="mySlides" src="Banner1.jpg" style="width:100%">
+  <img class="mySlides" src="Banner2.jpg" style="width:100%">
+  <img class="mySlides" src="Banner3.jpg" style="width:100%">
+</div>
+
+<h1 align="center"><b>Yashashree Food Product</b></h1>
+
+<table border="0" width="100%">
+
+<tr>
+<td align="center" class="zoom"><img src="1.png"></td>
+<td align="center" class="zoom"><img src="2.png"></td>
+<td align="center" class="zoom"><img src="3.png"></td>
+</td>
+</tr>
+
+<tr>
+<td align="center"><b><font size="4">UDAD PAPAD 1Kg</font></b></td>
+<td align="center"><b><font size="4">HALDI POWDER 1Kg</font></b></td>
+<td align="center"><b><font size="4">MIRCH POWDER 1Kg</font></b></td>
+</tr>
+
+<tr>
+<td align="center">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+</td>
+
+<td align="center">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+</td>
+
+<td align="center">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</td>
+</tr>
+<tr>
+<td align="center"><font size="4" color="green">Price: INR 250/-</font></td>
+<td align="center"><font size="4" color="green">Price: INR 140/-</font></td>
+<td align="center"><font size="4" color="green">Price: INR 250/-</font></td>
+</tr>
+
+<table border="0" width="100%">
+<br>
+<tr>
+<td align="center" class="zoom"><img src=""></td>
+<td align="center" class="zoom"><img src="1.png"></td>
+<td align="center" class="zoom"><img src=""></td>
+</td>
+</tr>
+
+<tr>
+<td align="center"><b><font size="4"></font></b></td>
+<td align="center"><b><font size="4">GARLIC FAV UDAD PAPAD 1Kg</font></b></td>
+<td align="center"><b><font size="4"></font></b></td>
+</tr>
+
+<tr>
+<td align="center">
+<span class=""span>
+<span class=""></span>
+<span class=""></span>
+<span class=""></span>
+<span class=""></span>
+</td>
+
+<td align="center">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</td>
+
+<td align="center">
+<span class=""></span>
+<span class=""></span>
+<span class=""></span>
+<span class=""></span>
+<span class=""></span>
+</td>
+</tr>
+
+<tr>
+<td align="center"><font size="4" color="green"></font></td>
+<td align="center"><font size="4" color="green">Price: INR 250/-</font></td>
+<td align="center"><font size="4" color="green"></font></td>
+</tr>
+
+</table> 
+
+<table border="0" width="100%" bgcolor="orange" height="7%" op"0.5">
+<tr>
+<td align="center"><font color="white">Designed By - Sarang Phalak</font>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
